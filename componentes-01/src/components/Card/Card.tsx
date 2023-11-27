@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
 
-interface AvatarProps {
+import React, { useState, useEffect } from "react";
+
+interface CardProps {
   images: string[]; // Array of image URLs
 }
 
-const FavoriteAvatar: React.FC<AvatarProps> = ({ images }) => {
+const Card: React.FC<CardProps> = ({ images }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    let interval: NodeJS.Timer;
+    let interval: NodeJS.Timeout; // Explicitly type the interval as NodeJS.Timeout
     if (isFavorite && images.length > 1) {
       interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -30,10 +31,10 @@ const FavoriteAvatar: React.FC<AvatarProps> = ({ images }) => {
     <div>
       <img src={images[currentImageIndex]} alt="Avatar" />
       <button onClick={toggleFavorite}>
-        {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+        {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
       </button>
     </div>
   );
 };
 
-export default FavoriteAvatar;
+export default Card;

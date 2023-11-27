@@ -1,10 +1,13 @@
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./style/App.scss";
+import Dev from "./pages/Dev"
 
 function App() {
   return (
     <div className="Principal">
-      <Routes></Routes>
+      <Routes>
+      <Route path="/dev" element={<Dev />} />
+      </Routes>
     </div>
   );
 }
