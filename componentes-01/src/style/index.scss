@@ -1,0 +1,51 @@
+
+@import 'root.scss';
+@font-face {
+    font-family: 'AbFonte';
+    src: url('../assets/AbFonte-Regular.ttf') format('truetype');
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'AbFonte', sans-serif;
+    overflow-x: hidden;
+
+
+background-color: var(--background-color);
+
+button{
+    font-family: 'AbFonte', sans-serif;
+}
+
+}
+
+.Principal{
+
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% ;
+        height: 100%;
+        margin: auto;
+      
+        
+
+      
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% ;
+    height: 100vh;
+}
+
