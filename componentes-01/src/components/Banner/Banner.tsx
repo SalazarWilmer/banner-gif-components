@@ -22,17 +22,6 @@ const nftImageUrls = [
   "bafybeiacu2aagvvta6gugcpso4du6veyhbr5sqit44fi66o3qyff6dxhdq/467fe270fc740acb34e01de6ebbd35b9ceb15c10b187e055225d9d9ed2fc20a6.png",
   "bafybeiacu2aagvvta6gugcpso4du6veyhbr5sqit44fi66o3qyff6dxhdq/ae1ef7012dfdb0882f2077ed5f6362cc123abe0ea334d8e42cd2cdb75972b2d7.png",
   "bafybeiacu2aagvvta6gugcpso4du6veyhbr5sqit44fi66o3qyff6dxhdq/3e96261b47472258a96fe45f5f3bbabc7ebfbca79ea55437e65971a224659a67.png",
-
-
-
-
-
-
-
-  
-
-
-
 ];
 
 const Banner: React.FC = () => {
