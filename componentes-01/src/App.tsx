@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./style/App.scss";
-import Dev from "./pages/Dev";
+import Dev from "./pages/Dev"
 
 function App() {
   return (
