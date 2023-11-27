@@ -1,9 +1,11 @@
+import Banner from "../components/Banner/Banner";
 
 function Dev() {
   return (
     <div>
-      <div className="section">
-      </div>
+    
+        <Banner/>
+
 
 
     </div>

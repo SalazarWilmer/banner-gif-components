@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 interface AvatarProps {
-  images: string[]; // Array of image URLs
+  images: string[];
 }
 
 const FavoriteAvatar: React.FC<AvatarProps> = ({ images }) => {
@@ -13,7 +13,7 @@ const FavoriteAvatar: React.FC<AvatarProps> = ({ images }) => {
     if (isFavorite && images.length > 1) {
       interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 1000); // Change image every 1000 milliseconds
+      }, 1000); 
     }
     return () => {
       if (interval) {
