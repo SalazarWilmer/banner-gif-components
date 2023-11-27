@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   background-color: rgb(243, 243, 243);
 
@@ -24,14 +25,23 @@
 }
 
 .favoriteCard {
-  border: 2px solid #f00;
-  padding: 20px;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 6px solid #f00;
+  padding: 16px;
+  margin: 16px;
+  gap: 20px;
+
+  width: 500px;
+  height: 500px;
 }
 
 .isFavorite {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: auto;
 }
 
 .imgGif {
