@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 interface CardProps {
-  images: string[]; // Array of image URLs
+  images: string[]; 
 }
 
 const Card: React.FC<CardProps> = ({ images }) => {
@@ -10,11 +10,11 @@ const Card: React.FC<CardProps> = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    let interval: NodeJS.Timeout; // Explicitly type the interval as NodeJS.Timeout
+    let interval: NodeJS.Timeout;
     if (isFavorite && images.length > 1) {
       interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 1000); // Change image every 1000 milliseconds
+      }, 1000); 
     }
     return () => {
       if (interval) {
