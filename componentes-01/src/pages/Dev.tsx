@@ -1,6 +1,7 @@
 import Card from  "./../components/Card/Card";
 
 
+import Banner from "../components/Banner/Banner";
 
 function Dev() {
 
@@ -15,6 +16,9 @@ function Dev() {
         <Card images={images} />
       </div>
         
+    
+        <Banner/>
+
 
 
     </div>
