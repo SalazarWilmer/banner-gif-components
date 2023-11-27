@@ -86,7 +86,7 @@ const Card: React.FC<CardProps> = ({ }) => {
           </div>
         )}
         <button className={styles.buttonFav} onClick={toggleFavorite}>
-          {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
+          {isFavorite ? "GIF" : "Add to Favorites"}
         </button>
       </div>
     </div>
